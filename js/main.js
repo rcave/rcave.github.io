@@ -31,14 +31,25 @@ $(document).ready(function () {
             $('nav ul li').addClass('dropDown');
         }
     });
+
+    $('nav ul li a').click(function () {
+        if ($(this).parent().hasClass('dropDown')) {
+            $('nav').hide();
+            $('nav').removeClass('active');
+            $('nav ul li').removeClass('dropDown');
+        }
+    });
+
     checkWidth(true);
 
     $(window).resize(function () {
         checkWidth(false);
     });
 
-    
-    $('.mobileNav').hover(function (){
-       $('.mobileNav div').css('background', '#595959'); 
-    }, function(){$('.mobileNav div').css('background', '#fff');});
+
+    $('.mobileNav').hover(function () {
+        $('.mobileNav div').css('background', '#595959');
+    }, function () {
+        $('.mobileNav div').css('background', '#fff');
+    });
 });
