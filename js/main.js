@@ -1,29 +1,40 @@
+function checkWidth(init) {
+    /*If browser resized, check width again */
+    if ($(window).width() > 725) {
+        $('nav').show();
+        $('nav').removeClass('active');
+        $('nav ul li').removeClass('dropDown');
+    } else {
+        if (!init) {
+            $('nav').hide();
+            $('nav').removeClass('active');
+            $('nav ul li').addClass('dropDown');
+        }
+    }
+}
+
 $(document).ready(function () {
 
     $('.mobileNav').click(function () {
-        $('nav ul').slideToggle('');
-    });
+        console.log("it was clicked");
 
-    $("a.sponImg").click(function () {
-        var clicked = $(this).attr("href");
-        $("#closeButton").show(1100);
-        $(".bsModal").slideDown(600);
-        $("#closeButton").click(function () {
-            $(".bsModal").slideUp(500);
-            $(".sponImg").removeClass("active");
-            $("#closeButton").hide(200);
-            $(".sponsorContainer").css("padding-bottom", "50px");
-        });
-        if ($(this).hasClass("active")) {
-            $(this).removeClass('active');
+        //Nav has to have class open
+        //Nav ul li has to have class dropDown
+
+        if ($('nav').hasClass('active')) {
+            $('nav').hide();
+            $('nav').removeClass('active');
+            $('nav ul li').removeClass('dropDown');
         } else {
-            $(".sponsorContainer").css("padding-bottom", "150px");
-            $(".sponDescription").hide();
-            $("a.sponImg").removeClass("active");
-            $(this).addClass('active');
-            $(clicked).slideDown(400);
+            $('nav').addClass('active');
+            $('nav').show();
+            $('nav ul li').addClass('dropDown');
         }
+    });
+    checkWidth(true);
 
+    $(window).resize(function () {
+        checkWidth(false);
     });
 
 });

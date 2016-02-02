@@ -1,0 +1,159 @@
+.container {
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+}
+
+header {
+    height: 100px;
+    background: #000;
+    
+}
+
+logo a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+logo a span {
+    font-size: 60px;
+}
+
+.mobileNav {
+    height: 60px;
+    width: 60px;
+    float: right;
+    padding-top: 8px;
+    margin: 20px 20px;
+    display: none;
+}
+
+.mobileNav div {
+    height: 5px;
+    background: white;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.mobileNav div:first-child {
+    margin-top: 10px;
+}
+
+nav {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    background: #000;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    color: #fff;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.dropDown {
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 725px) {
+    nav {
+        display: none;
+        clear: both;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .mobileNav {
+        display: inline;
+    }
+}
+
+.container {
+    clear: both;
+}
+
+#nameContainer {
+    padding: 60px 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hexTop {
+    width: 350px;
+    border-bottom: 100px solid #000;
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    margin: 0 auto;
+}
+
+.hexBot {
+    width: 350px;
+    margin: 0 auto;
+    border-top: 100px solid #000;
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+}
+
+#hexMid {
+    width: 350px;
+    height: 225px;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+#hexMid div {
+    padding-top: 75px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+#title {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#code {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
