@@ -37,4 +37,8 @@ $(document).ready(function () {
         checkWidth(false);
     });
 
+    
+    $('.mobileNav').hover(function (){
+       $('.mobileNav div').css('background', '#595959'); 
+    }, function(){$('.mobileNav div').css('background', '#fff');});
 });
