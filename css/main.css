@@ -228,7 +228,7 @@ header {
     width: 350px;
     height: 225px;
     margin: 0 auto;
-    border: 0;
+    border: 0 transparent;
     background-color: #fff;
     animation-name: hexMid;
     animation-duration: 3s;
