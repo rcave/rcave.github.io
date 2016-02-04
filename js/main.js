@@ -27,10 +27,6 @@ setTimeout(function () {
         function () {
             $('#rcLogoDiv').hide(800);
             $('#nameSwitch').css('display', 'block');
-        },
-        function () {
-            $('#nameSwitch').hide(800, 'linear');
-            $('#rcLogoDiv').css('display', 'block');
         }
     );
 
