@@ -99,6 +99,7 @@ h2 {
     height: 225px;
     margin: 0 auto;
     background-color: #000;
+    border: 0;
 }
 .hexLinks {
     padding-top: 75px;
@@ -227,6 +228,7 @@ header {
     width: 350px;
     height: 225px;
     margin: 0 auto;
+    border: 0;
     background-color: #fff;
     animation-name: hexMid;
     animation-duration: 3s;
