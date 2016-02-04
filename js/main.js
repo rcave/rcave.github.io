@@ -22,7 +22,6 @@
 
 //wait for animation to allow hover
 setTimeout(function () {
-
     $('#name').hover(
         function () {
             $('#rcLogoDiv').slideUp(500);
@@ -33,8 +32,8 @@ setTimeout(function () {
             $('#rcLogoDiv').slideDown(500);
         }
     );
-
 }, 3000);
+
 
 $('document').ready(function () {
     $('#hamMen').click(function () {

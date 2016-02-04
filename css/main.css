@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+.bodyContainer {
+    clear: both;
+}
+.container {
+    display: block;
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+>>>>>>> origin/master
 .anchor {
     display: block;
     height: 100px;
@@ -6,6 +18,7 @@
     /*same height as header*/
     visibility: hidden;
 }
+<<<<<<< HEAD
 
 h1 {
     font-size: 50px;
@@ -54,9 +67,21 @@ h2 {
 
 #wContainer h2,
 #cContainer h2 {
+=======
+header {
+    height: 100px;
+    background: #000;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+logo a {
+    text-decoration: none;
+>>>>>>> origin/master
     color: #fff;
     border-bottom-color: #fff;
 }
+<<<<<<< HEAD
 
 #sContainer {
     -webkit-box-shadow: 0px -5px 5px 0px rgba(250, 250, 250, 0.15);
@@ -81,6 +106,20 @@ h2 {
 /* Navigation Hexagon */
 
 #navTakeOver {
+=======
+logo a:hover {
+    color: #595959;
+}
+logo a span {
+    font-size: 60px;
+}
+.mobileNav {
+    height: 60px;
+    width: 60px;
+    float: right;
+    padding-top: 8px;
+    margin: 20px 20px;
+>>>>>>> origin/master
     display: none;
     margin: 0 auto;
     text-align: center;
@@ -89,6 +128,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 
 .hexTopNav {
     width: 300px;
@@ -100,11 +140,18 @@ h2 {
 
 .hexBotNav {
     width: 300px;
+=======
+.mobileNav div {
+    height: 5px;
+    background: #fff;
+    width: 60%;
+>>>>>>> origin/master
     margin: 0 auto;
     border-top: 100px solid #000;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
 }
+<<<<<<< HEAD
 
 .hexMidNav {
     width: 350px;
@@ -130,15 +177,36 @@ header {
     min-height: 500px;
     background: #000;
     width: 100%;
+=======
+.mobileNav div:first-child {
+    margin-top: 10px;
+}
+nav {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-top: 27px;
+    margin-right: 27px;
+    background: #000;
+}
+nav ul {
+>>>>>>> origin/master
     text-align: right;
     clear: both;
 }
+<<<<<<< HEAD
 
 .menCon {
     padding-top: 100px;
+=======
+nav ul li {
+    display: inline-block;
+    color: #fff;
+>>>>>>> origin/master
     text-align: right;
     float: left;
 }
+<<<<<<< HEAD
 
 #hamMen {
     width: 60px;
@@ -158,6 +226,21 @@ header {
 #hamMenuLinks {
     display: none;
     color: #fff;
+=======
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+nav ul li a:hover {
+    color: #595959;
+}
+.dropDown {
+    clear: both;
+    display: block;
+>>>>>>> origin/master
     width: 100%;
     background: white;
     position: fixed;
@@ -176,6 +259,7 @@ header {
     animation-duration: 4s;
     animation-delay: 0;
 }
+<<<<<<< HEAD
 
 @keyframes menuFadeIn {
     0% {
@@ -186,6 +270,16 @@ header {
     }
     50% {
         opacity: 0;
+=======
+@media screen and (max-width: 725px) {
+    nav {
+        display: none;
+        clear: both;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 20px;
+        text-align: center;
+>>>>>>> origin/master
     }
     75% {
         opacity: 0;
@@ -194,6 +288,7 @@ header {
         opacity: 1;
     }
 }
+<<<<<<< HEAD
 
 .menu a {
     text-decoration: none;
@@ -215,20 +310,32 @@ header {
 #logo {
     position: relative;
     height: 100%;
+=======
+.container {
+    clear: both;
+>>>>>>> origin/master
 }
-
 #name {
     margin: 0 auto;
     text-align: center;
+<<<<<<< HEAD
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 250px;
+=======
+    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+>>>>>>> origin/master
 }
-
 .hexTop {
+<<<<<<< HEAD
     width: 300px;
+=======
+    width: 350px;
+>>>>>>> origin/master
     border-bottom: 100px solid #fff;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
@@ -237,7 +344,6 @@ header {
     animation-duration: 3s;
     animation-timing-function: linear;
 }
-
 .hexBot {
     width: 300px;
     margin: 0 auto;
@@ -249,12 +355,17 @@ header {
     animation-duration: 3s;
     animation-timing-function: linear;
 }
+<<<<<<< HEAD
 
 .hexMid {
+=======
+#hexMid {
+>>>>>>> origin/master
     width: 350px;
     height: 225px;
     margin: 0 auto;
     background-color: #fff;
+<<<<<<< HEAD
     animation-name: hexMid;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -345,6 +456,83 @@ header {
 
 #nameSwitch {
     display: none;
+=======
+}
+#nameDiv {
+    padding-top: 75px;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #000;
+}
+h2 {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2px;
+}
+#title {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+    color: #000;
+}
+#code {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+#aContainer {
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#wContainer,
+#cContainer {
+    background: #000;
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#wContainer h2,
+#cContainer h2 {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+#sContainer {
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(250, 250, 250, 0.15);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(250, 250, 250, 0.15);
+    box-shadow: 0px -5px 5px 0px rgba(250, 250, 250, 0.15);
+}
+.contactStyles p {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.blackText {
+    color: #000;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.servRow {
+    width: 100%;
+    margin: 0 auto;
+}
+.servCol {
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    height: 300px;
+>>>>>>> origin/master
 }
 
 /* Media Queries for Responsiveness */
