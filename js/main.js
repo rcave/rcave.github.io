@@ -25,12 +25,12 @@ setTimeout(function () {
 
     $('#name').hover(
         function () {
-            $('#rcLogoDiv').slideUp(800);
-            $('#nameSwitch').slideDown(800);
+            $('#rcLogoDiv').hide(800);
+            $('#nameSwitch').css('display', 'block');
         },
         function () {
-            $('#nameSwitch').slideUp(800);
-            $('#rcLogoDiv').slideDown(800);
+            $('#nameSwitch').hide(800, 'linear');
+            $('#rcLogoDiv').css('display', 'block');
         }
     );
 

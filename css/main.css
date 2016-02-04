@@ -64,9 +64,13 @@ h2 {
 
 /************************************************************/
 
+
+/*
 * {
     box-sizing: border-box;
 }
+*/
+
 
 /* Navigation Hexagon */
 
@@ -85,21 +89,23 @@ h2 {
     border-bottom: 100px solid #000;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
-    margin: 0 auto;
+    -webkit-backface-visibility: hidden;
 }
 .hexBotNav {
     width: 300px;
     margin: 0 auto;
-    border-top: 100px solid #000;
+    border-top: 99px solid #000;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
+    -webkit-backface-visibility: hidden;
 }
 .hexMidNav {
-    width: 350px;
+    width: 349.5px;
     height: 225px;
-    margin: 0 auto;
+    margin: -.1px auto;
     background-color: #000;
-    border: 0;
+    -webkit-backface-visibility: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
 }
 .hexLinks {
     padding-top: 75px;
@@ -209,19 +215,21 @@ header {
     border-right: 175px solid transparent;
     margin: 0 auto;
     animation-name: hexTop;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
+    -webkit-backface-visibility: hidden;
 }
 .hexBot {
     width: 300px;
     margin: 0 auto;
-    border-top: 100px solid #fff;
+    border-top: 99px solid #fff;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
     margin: 0 auto;
     animation-name: hexBot;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
+    -webkit-backface-visibility: hidden;
 }
 .hexMid {
     width: 350px;
@@ -230,8 +238,10 @@ header {
     border: 0 transparent;
     background-color: #fff;
     animation-name: hexMid;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
+    -webkit-backface-visibility: hidden;
+    box-shadow: 0 1px 1px rgba(250, 250, 250, 1);
 }
 #rcLogoDiv {
     width: 100%;
