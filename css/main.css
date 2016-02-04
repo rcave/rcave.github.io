@@ -241,7 +241,7 @@ header {
     animation-duration: 2s;
     animation-timing-function: linear;
     -webkit-backface-visibility: hidden;
-    box-shadow: 0 1px 1px rgba(250, 250, 250, 1);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 1);
 }
 #rcLogoDiv {
     width: 100%;
