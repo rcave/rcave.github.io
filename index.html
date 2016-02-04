@@ -10,30 +10,39 @@
 
 </head>
 
-<body>
-    <header>
-        <logo>
-            <a href="#name">&lt;<span>rc</span>/&gt;</a>
-        </logo>
-        <div class="mobileNav">
+<div id="hamMenuLinks">
+    <div id="navTakeOver">
+        <div class="hexTopNav"></div>
+        <div class="hexMidNav">
+            <div class="hexLinks">
+
+            </div>
+        </div>
+        <div class="hexBotNav"></div>
+    </div>
+</div>
+<header>
+    <div class="menCon">
+        <div id="hamMen">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="bodyContainer">
+        <div class="menu">
+            <a href="#bio">Bio</a>
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div id="logo">
         <div id="name">
             <div class="hexTop"></div>
-            <div id="hexMid">
-                <div>
+            <div class="hexMid">
+                <div id="rcLogoDiv">
+                    <img id="rcLogo" src="images/rcBlack.png" alt="RUDY CAVEDA" />
+                </div>
+                <div id="nameSwitch">
                     <h1>Rudy Caveda</h1>
                     <p id="title">Front-End Web Developer</p>
                     <p id="code">HTML - CSS - JAVASCRIPT</p>
@@ -41,14 +50,20 @@
             </div>
             <div class="hexBot"></div>
         </div>
-        <!------ END NameContainer ----->
+    </div>
+</header>
+
+<div class="bodyContainer">
+    <!--
         <span class="anchor" id="about"></span>
         <div id="aContainer">
             <div id="aboutContiner" class="container">
                 <h2>About</h2>
             </div>
         </div>
-        <!----- END ABOUT ----->
+-->
+    <!----- END ABOUT ----->
+    <!--
         <span class="anchor" id="work"></span>
         <div id="wContainer">
             <div id="workContiner" class="container">
@@ -56,7 +71,9 @@
             </div>
 
         </div>
-        <!----- END work ----->
+-->
+    <!----- END work ----->
+    <!--
         <span class="anchor" id="services"></span>
         <div id="sContainer">
             <div id="servicesContiner" class="container">
@@ -64,7 +81,9 @@
             </div>
 
         </div>
-        <!----- END SERVICES ----->
+-->
+    <!----- END SERVICES ----->
+    <!--
         <span class="anchor" id="contact"></span>
         <div id="cContainer">
             <div id="contactContiner" class="container">
@@ -72,12 +91,13 @@
             </div>
 
         </div>
-        <!----- END CONTACT ----->
-    </div>
+-->
+    <!----- END CONTACT ----->
+    <!--    </div>-->
     <!----- END CONTAINER ----->
     <footer></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+    </body>
 
 </html>

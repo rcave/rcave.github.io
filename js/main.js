@@ -1,44 +1,56 @@
-function checkWidth(init) {
-    /*If browser resized, check width again */
-    if ($(window).width() > 725) {
-        $('nav').show();
-        $('nav').removeClass('active');
-        $('nav ul li').removeClass('dropDown');
-    } else {
-        if (!init) {
-            $('nav').hide();
-            $('nav').removeClass('active');
-            $('nav ul li').addClass('dropDown');
+//function checkWidth(init) {
+//    /*If browser resized, check width again */
+//    if ($(window).width() > 725) {
+//        $('nav').show();
+//        $('nav').removeClass('active');
+//        $('nav ul li').removeClass('dropDown');
+//    } else {
+//        if (!init) {
+//            $('nav').hide();
+//            $('nav').removeClass('active');
+//            $('nav ul li').addClass('dropDown');
+//        }
+//    }
+//}
+
+//    checkWidth(true);
+//
+//    $(window).resize(function () {
+//        checkWidth(false);
+//    });
+
+
+//wait for animation to allow hover
+setTimeout(function () {
+
+    $('#name').hover(
+        function () {
+            $('#rcLogoDiv').slideUp(500);
+            $('#nameSwitch').slideDown(500);
+        },
+        function () {
+            $('#nameSwitch').slideUp(500);
+            $('#rcLogoDiv').slideDown(500);
         }
-    }
-}
+    );
 
-$(document).ready(function () {
+}, 3000);
 
-    $('.mobileNav').click(function () {
-        console.log("it was clicked");
+$('document').ready(function () {
+    $('#hamMen').click(function () {
 
-        //Nav has to have class open
-        //Nav ul li has to have class dropDown
-
-        if ($('nav').hasClass('active')) {
-            $('nav').hide();
-            $('nav').removeClass('active');
-            $('nav ul li').removeClass('dropDown');
+        if ($('#hamMen').hasClass('takeOver')) {
+            $('#navTakeOver').slideUp(1000);
+            setTimeout(function () {
+                $('#hamMenuLinks').hide();
+            }, 1000);
+            $('#hamMen').removeClass('takeOver');
+            $('#hamMen div').css('background', '#fff');
         } else {
-            $('nav').addClass('active');
-            $('nav').show();
-            $('nav ul li').addClass('dropDown');
+            $('#hamMenuLinks').show();
+            $('#navTakeOver').slideDown(1000);
+            $('#hamMen').addClass('takeOver');
+            $('#hamMen div').css('background', '#000');
         }
     });
-    checkWidth(true);
-
-    $(window).resize(function () {
-        checkWidth(false);
-    });
-
-    
-    $('.mobileNav').hover(function (){
-       $('.mobileNav div').css('background', '#595959'); 
-    }, function(){$('.mobileNav div').css('background', '#fff');});
-});
+})
