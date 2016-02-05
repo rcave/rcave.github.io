@@ -342,7 +342,7 @@ h1 {
     clear: both;
 }
 #bioContainer {
-    background: url("../images/rc") no-repeat;
+    background: url("../images/rcFlip.png") no-repeat;
     background-size: cover;
     height: 100vh;
 }
