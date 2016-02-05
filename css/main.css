@@ -89,7 +89,6 @@ h2 {
     border-bottom: 100px solid #000;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
-    -webkit-backface-visibility: hidden;
 }
 .hexBotNav {
     width: 300px;
@@ -97,14 +96,12 @@ h2 {
     border-top: 99px solid #000;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
-    -webkit-backface-visibility: hidden;
 }
 .hexMidNav {
     width: 349.5px;
     height: 225px;
     margin: -.1px auto;
     background-color: #000;
-    -webkit-backface-visibility: hidden;
     box-shadow: 0 0 1px rgba(0, 0, 0, 1);
 }
 .hexLinks {
@@ -217,7 +214,6 @@ header {
     animation-name: hexTop;
     animation-duration: 2s;
     animation-timing-function: linear;
-    -webkit-backface-visibility: hidden;
 }
 .hexBot {
     width: 300px;
@@ -229,7 +225,6 @@ header {
     animation-name: hexBot;
     animation-duration: 2s;
     animation-timing-function: linear;
-    -webkit-backface-visibility: hidden;
 }
 .hexMid {
     width: 350px;
@@ -240,20 +235,29 @@ header {
     animation-name: hexMid;
     animation-duration: 2s;
     animation-timing-function: linear;
-    -webkit-backface-visibility: hidden;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 1);
 }
 #rcLogoDiv {
     width: 100%;
     height: 100%;
     position: relative;
+    animation-name: logoTrans;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
-#rcLogo {
-    width: 90%;
+#rcLogoText {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 125px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#rcLogoText span {
+    font-size: 150px;
 }
 #nameSwitch {
     padding-top: 60px;
@@ -319,6 +323,26 @@ header {
     100% {
         width: 350px;
         height: 225px;
+    }
+}
+@keyframes logoTrans {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25%% {
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opactiy: 1;
     }
 }
 #nameSwitch {
