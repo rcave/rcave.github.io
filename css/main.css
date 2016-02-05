@@ -51,7 +51,7 @@
     height: 225px;
     margin: -.1px auto;
     background-color: #000;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 1);
 }
 .hexLinks {
     padding-top: 75px;
@@ -342,7 +342,10 @@ h1 {
     clear: both;
 }
 #bioContainer {
-    background: url("../images/rcFlip.png") no-repeat;
+    background: url("../images/rc.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100vh;
 }
