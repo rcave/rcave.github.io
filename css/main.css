@@ -203,87 +203,89 @@ header {
 #nameSwitch {
     padding-top: 60px;
 }
-@keyframes hexTop {
-    0% {
-        width: 300px;
-        border-bottom: 100px solid #fff;
-        border-left: 175px solid transparent;
-        border-right: 175px solid transparent;
-        margin: 0 auto;
+@media screen and (min-width: 575px) {
+    @keyframes hexTop {
+        0% {
+            width: 300px;
+            border-bottom: 100px solid #fff;
+            border-left: 175px solid transparent;
+            border-right: 175px solid transparent;
+            margin: 0 auto;
+        }
+        50% {
+            width: 525px;
+            border-bottom: 150px solid #fff;
+            border-left: 264px solid transparent;
+            border-right: 264px solid transparent;
+            margin: 0 auto;
+        }
+        100% {
+            width: 300px;
+            border-bottom: 100px solid #fff;
+            border-left: 175px solid transparent;
+            border-right: 175px solid transparent;
+            margin: 0 auto;
+        }
     }
-    50% {
-        width: 525px;
-        border-bottom: 150px solid #fff;
-        border-left: 264px solid transparent;
-        border-right: 264px solid transparent;
-        margin: 0 auto;
+    @keyframes hexBot {
+        0% {
+            width: 350px;
+            margin: 0 auto;
+            border-top: 100px solid #fff;
+            border-left: 175px solid transparent;
+            border-right: 175px solid transparent;
+            margin: 0 auto;
+        }
+        50% {
+            width: 525px;
+            margin: 0 auto;
+            border-top: 150px solid #fff;
+            border-left: 264px solid transparent;
+            border-right: 264px solid transparent;
+            margin: 0 auto;
+        }
+        100% {
+            width: 350px;
+            margin: 0 auto;
+            border-top: 100px solid #fff;
+            border-left: 175px solid transparent;
+            border-right: 175px solid transparent;
+            margin: 0 auto;
+        }
     }
-    100% {
-        width: 300px;
-        border-bottom: 100px solid #fff;
-        border-left: 175px solid transparent;
-        border-right: 175px solid transparent;
-        margin: 0 auto;
+    @keyframes hexMid {
+        0% {
+            width: 350px;
+            height: 225px;
+        }
+        50% {
+            width: 525px;
+            height: 300px;
+        }
+        100% {
+            width: 350px;
+            height: 225px;
+        }
     }
-}
-@keyframes hexBot {
-    0% {
-        width: 350px;
-        margin: 0 auto;
-        border-top: 100px solid #fff;
-        border-left: 175px solid transparent;
-        border-right: 175px solid transparent;
-        margin: 0 auto;
-    }
-    50% {
-        width: 525px;
-        margin: 0 auto;
-        border-top: 150px solid #fff;
-        border-left: 264px solid transparent;
-        border-right: 264px solid transparent;
-        margin: 0 auto;
-    }
-    100% {
-        width: 350px;
-        margin: 0 auto;
-        border-top: 100px solid #fff;
-        border-left: 175px solid transparent;
-        border-right: 175px solid transparent;
-        margin: 0 auto;
-    }
-}
-@keyframes hexMid {
-    0% {
-        width: 350px;
-        height: 225px;
-    }
-    50% {
-        width: 525px;
-        height: 300px;
-    }
-    100% {
-        width: 350px;
-        height: 225px;
-    }
-}
-@keyframes logoTrans {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    25%% {
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.5);
-        opacity: 0;
-    }
-    75% {
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opactiy: 1;
+    @keyframes logoTrans {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        25%% {
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opactiy: 1;
+        }
     }
 }
 h1 {
@@ -347,7 +349,6 @@ h1 {
     opacity: .5;
     border-radius: 50px;
     height: 100%;
-    z-index: 11;
 }
 
 /************************************************************/
