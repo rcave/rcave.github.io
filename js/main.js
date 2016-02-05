@@ -22,11 +22,7 @@
 
 //wait for animation to allow hover
 
-if ($(window).width() < 500) {
-    $('.hexTop').removeClass('topAni');
-    $('.hexMid').removeClass('midAni');
-    $('.hexBot').removeClass('botAni');
-}
+
 setTimeout(function () {
 
     $('#rcLogoDiv').hide(800);
@@ -35,6 +31,11 @@ setTimeout(function () {
 }, 3000);
 
 $('document').ready(function () {
+    if ($(window).width() < 500) {
+        $('.hexTop').removeClass('topAni');
+        $('.hexMid').removeClass('midAni');
+        $('.hexBot').removeClass('botAni');
+    }
     $('#hamMen').click(function () {
 
         if ($('#hamMen').hasClass('takeOver')) {
