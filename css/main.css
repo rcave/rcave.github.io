@@ -326,7 +326,7 @@ h1 {
     min-height: 500px;
 }
 #bioContainer {
-    background: url("../images/rc1.png") no-repeat center top scroll;
+    background: url("../images/rc1.png") no-repeat center top fixed;
     ;
     background-size: cover;
     width: 100%;
@@ -341,10 +341,24 @@ h1 {
     margin: 0 auto;
 }
 .con50 {
-    width: 40%;
+    width: 365px;
     border: 2px solid yellow;
     background: #000;
     opacity: .5;
     border-radius: 50px;
     height: 100%;
+    z-index: 11;
+}
+
+/************************************************************/
+
+
+/* Work */
+
+
+/************************************************************/
+
+#wContainer {
+    height: 100vh;
+    color: #000;
 }
