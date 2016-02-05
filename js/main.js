@@ -1,6 +1,6 @@
 //function checkWidth(init) {
 //    /*If browser resized, check width again */
-//    if ($(window).width() > 725) {
+//    if ($(window).width() > 500) {
 //        $('nav').show();
 //        $('nav').removeClass('active');
 //        $('nav ul li').removeClass('dropDown');
@@ -49,4 +49,4 @@ $('document').ready(function () {
             $('#hamMen div').css('background', '#000');
         }
     });
-})
+});

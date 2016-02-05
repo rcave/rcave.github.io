@@ -1,13 +1,5 @@
 /* Global Classes */
 
-.anchor {
-    display: block;
-    height: 100px;
-    /*same height as header*/
-    margin-top: -100px;
-    /*same height as header*/
-    visibility: hidden;
-}
 * {
     box-sizing: border-box;
 }
@@ -38,6 +30,7 @@
     border-bottom: 100px solid #000;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
+    z-index: 11;
 }
 .hexBotNav {
     width: 300px;
@@ -47,11 +40,11 @@
     border-right: 175px solid transparent;
 }
 .hexMidNav {
-    width: 349.5px;
+    width: 348px;
     height: 225px;
     margin: -.1px auto;
     background-color: #000;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 1);
 }
 .hexLinks {
     padding-top: 75px;
@@ -82,7 +75,6 @@ header {
     margin: -75px 0 0 25px;
     z-index: 10;
     position: fixed;
-    display: none;
 }
 #hamMen div {
     height: 5px;
@@ -318,14 +310,6 @@ h1 {
 
 /* Media Queries for Responsiveness */
 
-@media screen and (max-width: 1060px) {
-    .menu {
-        display: none;
-    }
-    #hamMen {
-        display: block;
-    }
-}
 
 /************************************************************/
 
@@ -337,15 +321,30 @@ h1 {
 
 #bContainer {
     background: #fff;
-    height: 100vh;
-    width: 100%;
     clear: both;
+    height: 100vh;
+    min-height: 500px;
 }
 #bioContainer {
-    background: url("../images/rc.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("../images/rc1.png") no-repeat center top scroll;
+    ;
     background-size: cover;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+}
+.con90 {
+    width: 90%;
+    height: 90vh;
+    padding: 100px 0;
+    top: 50px;
+    margin: 0 auto;
+}
+.con50 {
+    width: 40%;
+    border: 2px solid yellow;
+    background: #000;
+    opacity: .5;
+    border-radius: 50px;
+    height: 100%;
 }
