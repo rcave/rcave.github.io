@@ -21,14 +21,16 @@
 
 
 //wait for animation to allow hover
+
+if ($(window).width() < 500) {
+    $('.hexTop').removeClass('topAni');
+    $('.hexMid').removeClass('midAni');
+    $('.hexBot').removeClass('botAni');
+}
 setTimeout(function () {
 
-    $('#name').hover(
-        function () {
-            $('#rcLogoDiv').hide(800);
-            $('#nameSwitch').css('display', 'block');
-        }
-    );
+    $('#rcLogoDiv').hide(800);
+    $('#nameSwitch').css('display', 'block');
 
 }, 3000);
 
