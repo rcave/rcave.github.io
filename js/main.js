@@ -52,4 +52,13 @@ $('document').ready(function () {
             $('#hamMen div').css('background', '#000');
         }
     });
+
+    $('.hexLinks li a').click(function () {
+        $('#navTakeOver').slideUp(1000);
+        setTimeout(function () {
+            $('#hamMenuLinks').hide();
+        }, 1000);
+        $('#hamMen').removeClass('takeOver');
+        $('#hamMen div').css('background', '#fff');
+    });
 });
