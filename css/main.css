@@ -32,7 +32,7 @@
     border-bottom: 100px solid #000;
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
-    z-index: 11;
+    z-index: 999;
 }
 
 .hexBotNav {
@@ -94,21 +94,22 @@ header {
 }
 
 .menCon {
-    padding-top: 100px;
+    height: 75px;
+    background: none;
     text-align: right;
-    float: left;
     width: 100%;
-    background: #000;
     position: fixed;
     z-index: 15;
+    
 }
 
 #hamMen {
     width: 60px;
     height: 60px;
-    margin: -75px 0 0 25px;
     z-index: 10;
     position: fixed;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 #hamMen div {
@@ -403,14 +404,14 @@ h1 {
     z-index: 8;
 }
 
-.con90 {
+#bioTxtContainer {
     width: 90%;
     height: 100%;
     padding: 5% 0;
     margin: 0 auto;
 }
 
-.con50 {
+#bioTxt {
     width: 365px;
     border: 2px solid yellow;
     background: #000;
@@ -418,7 +419,9 @@ h1 {
     border-radius: 50px;
     height: 100%;
 }
-
+@media screen and (max-width: ){
+    
+}
 
 /************************************************************/
 
@@ -434,3 +437,10 @@ h1 {
     position: absolute;
     z-index: 9;
 }
+
+/************************************************************/
+
+/* Contact */
+
+/************************************************************/
+
