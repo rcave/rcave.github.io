@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*
 .anchor {
     display: block;
@@ -12,6 +13,7 @@
     visibility: hidden;
 }
 */
+
 
 /************************************************************/
 
@@ -34,6 +36,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .hexTopNav {
     width: 300px;
     border-bottom: 100px solid #000;
@@ -41,6 +44,7 @@
     border-right: 175px solid transparent;
     z-index: 999;
 }
+
 .hexBotNav {
     width: 300px;
     margin: 0 auto;
@@ -48,6 +52,7 @@
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
 }
+
 .hexMidNav {
     width: 348px;
     height: 225px;
@@ -56,6 +61,7 @@
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 1);
     position: relative;
 }
+
 .hexLinks {
     position: relative;
     top: 50%;
@@ -65,12 +71,15 @@
     z-index: 12;
     font-size: 40px;
 }
+
 .hexLinks li {
     margin-bottom: 20px;
 }
+
 .hexLinks li a:hover {
     color: #8686ac;
 }
+
 .hexLinks li a {
     text-decoration: none;
     color: white;
@@ -78,20 +87,23 @@
     font-weight: 700;
 }
 
+
 /* End nav hex */
 
 body {
     background: #fff;
     width: 100%;
 }
+
 header {
     height: 100vh;
-    min-height: 500px;
+    min-height: 675px;
     background: #000;
     width: 100%;
     text-align: right;
     clear: both;
 }
+
 .menCon {
     height: 65px;
     text-align: right;
@@ -99,6 +111,7 @@ header {
     position: fixed;
     z-index: 15;
 }
+
 #hamMen {
     width: 50px;
     height: 50px;
@@ -107,11 +120,13 @@ header {
     margin-top: 10px;
     margin-left: 10px;
 }
+
 #hamMen div {
     height: 5px;
     background: #fff;
     margin: 8px;
 }
+
 #hamMenuLinks {
     display: none;
     color: #fff;
@@ -122,6 +137,7 @@ header {
     min-height: 500px;
     z-index: 9;
 }
+
 .menu {
     width: 150px;
     border: 5px solid #fff;
@@ -132,6 +148,7 @@ header {
     animation-duration: 4s;
     animation-delay: 0;
 }
+
 @keyframes menuFadeIn {
     0% {
         opacity: 0;
@@ -149,6 +166,7 @@ header {
         opacity: 1;
     }
 }
+
 .menu a {
     text-decoration: none;
     color: #fff;
@@ -161,13 +179,16 @@ header {
     width: 75%;
     margin: 0 auto;
 }
+
 .menu a:last-child {
     border-bottom: none;
 }
+
 #logo {
     position: relative;
     height: 100%;
 }
+
 #name {
     font-size: 0;
     margin: 0 auto;
@@ -177,6 +198,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .hexTop {
     width: 300px;
     border-bottom: 100px solid #fff;
@@ -184,11 +206,13 @@ header {
     border-right: 175px solid transparent;
     margin: 0 auto;
 }
+
 .topAni {
     animation-name: hexTop;
     animation-duration: 2s;
     animation-timing-function: linear;
 }
+
 .hexBot {
     width: 300px;
     margin: 0 auto;
@@ -197,11 +221,13 @@ header {
     border-right: 175px solid transparent;
     margin: 0 auto;
 }
+
 .botAni {
     animation-name: hexBot;
     animation-duration: 2s;
     animation-timing-function: linear;
 }
+
 .hexMid {
     width: 350px;
     height: 225px;
@@ -210,11 +236,13 @@ header {
     background-color: #fff;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 1);
 }
+
 .midAni {
     animation-name: hexMid;
     animation-duration: 2s;
     animation-timing-function: linear;
 }
+
 #rcLogoDiv {
     width: 100%;
     height: 100%;
@@ -223,6 +251,7 @@ header {
     animation-duration: 2s;
     animation-timing-function: linear;
 }
+
 #rcLogoText {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 125px;
@@ -234,9 +263,11 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 #rcLogoText span {
     font-size: 150px;
 }
+
 #nameSwitch {
     padding-top: 60px;
 }
@@ -248,20 +279,24 @@ h1 {
     margin-bottom: 10px;
     color: #000;
 }
+
 #title {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
     color: #000;
 }
+
 #code {
     font-size: 15px;
     font-family: 'Lato', sans-serif;
     color: #000;
 }
+
 #nameSwitch {
     display: none;
 }
+
 
 /* Media Queries for Responsiveness */
 
@@ -349,8 +384,8 @@ h1 {
             opactiy: 1;
         }
     }
-
 }
+
 
 /************************************************************/
 
@@ -366,6 +401,7 @@ h1 {
     height: 100vh;
     min-height: 675px;
 }
+
 #bioContainer {
     background: url("../images/rc1.png") no-repeat center top;
     -webkit-background-size: cover;
@@ -377,22 +413,23 @@ h1 {
     min-height: 675px;
     z-index: 8;
 }
+
 #bioTxtContainer {
     width: 85%;
     height: 100%;
     padding: 5% 0;
     margin: 0 auto;
     position: relative;
-
 }
+
 #bioTxt {
     width: 325px;
     border: 2px solid rgba(0, 0, 0, 0.5);
     background: #000;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 50px;
-    
 }
+
 h2#bioHeader {
     margin: 30px 30px;
     color: #fff;
@@ -403,6 +440,7 @@ h2#bioHeader {
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
 }
+
 .bioContent {
     color: #fff;
     font-size: 15px;
@@ -416,17 +454,20 @@ h2#bioHeader {
     text-align: center;
     padding-bottom: 20px;
 }
+
 .socialBioImg {
     width: 40px;
     display: inline-block;
     margin-right: 10px;
 }
+
+
 /* Media query for Header and Bio container at 575px */
+
 @media screen and (max-width: 575px) {
     .menCon {
         background: #000;
     }
-    
     #bioContainer {
         padding: 0;
         margin: 0;
@@ -435,8 +476,7 @@ h2#bioHeader {
         width: 100%;
         padding: 0;
         margin: 0;
-                position: relative;
-
+        position: relative;
     }
     #bioTxt {
         position: absolute;
@@ -447,6 +487,8 @@ h2#bioHeader {
         padding: 0px;
     }
 }
+
+
 /************************************************************/
 
 
@@ -456,12 +498,25 @@ h2#bioHeader {
 /************************************************************/
 
 #wContainer {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     color: red;
     position: absolute;
     z-index: 0;
     background: #000;
+}
+
+.workDiv {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    background: gray;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.workDiv:hover {
+    transform: scale(1.1);
 }
 
 /************************************************************/
