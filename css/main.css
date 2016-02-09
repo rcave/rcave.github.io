@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-
 .anchor {
     display: block;
     height: 70px;
     margin-top: -70px;
     visibility: hidden;
 }
-
-
+html {
+    width: 100%;
+}
 /************************************************************/
 
 
@@ -485,11 +485,13 @@ h2#bioHeader {
         padding: 0px;
     }
 }
-@media screen and (min-width: 575px){
+
+@media screen and (min-width: 575px) {
     #bioTxtContainer {
         margin-left: 75px;
     }
 }
+
 
 /************************************************************/
 
@@ -500,17 +502,21 @@ h2#bioHeader {
 /************************************************************/
 
 #wContainer {
-    min-height: 100vh;
     width: 100%;
-    color: red;
-    position: absolute;
     z-index: 0;
     background: #000;
 }
 
+#workContainer {
+    position: relative;
+    min-height: 100vh;
+    width: 100%
+}
+
 #workContainer h2 {
     width: 85%;
-    margin: 40px auto;
+    margin: 0 auto;
+    padding-top: 40px;
     color: #fff;
     z-index: 20;
     font-size: 30px;
@@ -523,7 +529,9 @@ h2#bioHeader {
 .workRow {
     width: 85%;
     margin: 0 auto;
+    max-width: 900px;
 }
+
 .workDiv {
     margin: 50px auto;
     width: 200px;
@@ -537,12 +545,20 @@ h2#bioHeader {
     transform: scale(1.1);
 }
 
-@media screen and (min-width: 575px){
+@media screen and (min-width: 768px) {
     #workContainer h2 {
         margin-left: 75px;
         border-bottom: none;
     }
+    .workRow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
+
+
 /************************************************************/
 
 
@@ -550,3 +566,14 @@ h2#bioHeader {
 
 
 /************************************************************/
+#cContainer {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 0;
+    background: #fff;
+}
+
+#contactContainer {
+    width: 85%;
+    margin: 0 auto;
+}
