@@ -34,6 +34,9 @@ $('document').ready(function () {
 
     }, 3000);
 
+    if ($(window).width() > 575) {
+        $('.anchor').removeClass('anchor');
+    }
     if ($(window).width() < 500) {
         $('.hexTop').removeClass('topAni');
         $('.hexMid').removeClass('midAni');
@@ -73,5 +76,11 @@ $('document').ready(function () {
         }, 1000);
         $('#hamMen').removeClass('takeOver');
         $('#hamMen div').css('background', '#fff');
+        
+        if ($(window).width() < 500) { 
+            setTimeout(function () {
+                $('.menCon').css('background', '#000');
+            }, 1000);
+        }
     });
 });

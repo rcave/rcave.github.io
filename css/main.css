@@ -5,14 +5,12 @@
 }
 
 
-/*
 .anchor {
     display: block;
-    height: 75px;
-    margin-top: -75px;
+    height: 70px;
+    margin-top: -70px;
     visibility: hidden;
 }
-*/
 
 
 /************************************************************/
@@ -105,7 +103,7 @@ header {
 }
 
 .menCon {
-    height: 65px;
+    height: 70px;
     text-align: right;
     width: 100%;
     position: fixed;
@@ -415,10 +413,10 @@ h1 {
 }
 
 #bioTxtContainer {
+    margin: 0 auto;
     width: 85%;
     height: 100%;
     padding: 5% 0;
-    margin: 0 auto;
     position: relative;
 }
 
@@ -487,7 +485,11 @@ h2#bioHeader {
         padding: 0px;
     }
 }
-
+@media screen and (min-width: 575px){
+    #bioTxtContainer {
+        margin-left: 75px;
+    }
+}
 
 /************************************************************/
 
@@ -506,6 +508,17 @@ h2#bioHeader {
     background: #000;
 }
 
+#workContainer h2 {
+    width: 85%;
+    margin: 40px auto;
+    color: #fff;
+    z-index: 20;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
 .workDiv {
     margin: 50px auto;
     width: 200px;
@@ -519,6 +532,11 @@ h2#bioHeader {
     transform: scale(1.1);
 }
 
+@media screen and (min-width: 575px){
+    #workContainer h2 {
+        margin-left: 75px;
+    }
+}
 /************************************************************/
 
 
