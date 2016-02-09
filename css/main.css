@@ -517,6 +517,7 @@ h2#bioHeader {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
 }
 
 .workDiv {
@@ -535,6 +536,7 @@ h2#bioHeader {
 @media screen and (min-width: 575px){
     #workContainer h2 {
         margin-left: 75px;
+        border-bottom: none;
     }
 }
 /************************************************************/
