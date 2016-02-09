@@ -38,6 +38,16 @@ $('document').ready(function () {
         $('.hexTop').removeClass('topAni');
         $('.hexMid').removeClass('midAni');
         $('.hexBot').removeClass('botAni');
+        
+        $('#hamMen').click(function () {
+            if ($('#hamMen').hasClass('takeOver')) {
+                setTimeout(function () {
+                $('.menCon').css('background', '#000');
+            }, 1000);
+            }else {
+                $('.menCon').css('background', 'none');
+            }
+        });
     }
     $('#hamMen').click(function () {
 
