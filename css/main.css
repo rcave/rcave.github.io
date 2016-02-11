@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
 }
-
 .anchor {
     display: block;
     height: 70px;
@@ -13,6 +12,7 @@
 html {
     width: 100%;
 }
+
 /************************************************************/
 
 
@@ -34,7 +34,6 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .hexTopNav {
     width: 300px;
     border-bottom: 100px solid #000;
@@ -42,7 +41,6 @@ html {
     border-right: 175px solid transparent;
     z-index: 999;
 }
-
 .hexBotNav {
     width: 300px;
     margin: 0 auto;
@@ -50,7 +48,6 @@ html {
     border-left: 175px solid transparent;
     border-right: 175px solid transparent;
 }
-
 .hexMidNav {
     width: 348px;
     height: 225px;
@@ -59,7 +56,6 @@ html {
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 1);
     position: relative;
 }
-
 .hexLinks {
     position: relative;
     top: 50%;
@@ -69,15 +65,12 @@ html {
     z-index: 12;
     font-size: 40px;
 }
-
 .hexLinks li {
     margin-bottom: 20px;
 }
-
 .hexLinks li a:hover {
     color: #8686ac;
 }
-
 .hexLinks li a {
     text-decoration: none;
     color: white;
@@ -85,14 +78,12 @@ html {
     font-weight: 700;
 }
 
-
 /* End nav hex */
 
 body {
     background: #fff;
     width: 100%;
 }
-
 header {
     height: 100vh;
     min-height: 675px;
@@ -101,7 +92,6 @@ header {
     text-align: right;
     clear: both;
 }
-
 .menCon {
     height: 70px;
     text-align: right;
@@ -109,7 +99,6 @@ header {
     position: fixed;
     z-index: 15;
 }
-
 #hamMen {
     width: 50px;
     height: 50px;
@@ -118,13 +107,11 @@ header {
     margin-top: 10px;
     margin-left: 10px;
 }
-
 #hamMen div {
     height: 5px;
     background: #fff;
     margin: 8px;
 }
-
 #hamMenuLinks {
     display: none;
     color: #fff;
@@ -135,7 +122,6 @@ header {
     min-height: 500px;
     z-index: 9;
 }
-
 .menu {
     width: 150px;
     border: 5px solid #fff;
@@ -146,7 +132,6 @@ header {
     animation-duration: 4s;
     animation-delay: 0;
 }
-
 @keyframes menuFadeIn {
     0% {
         opacity: 0;
@@ -164,7 +149,6 @@ header {
         opacity: 1;
     }
 }
-
 .menu a {
     text-decoration: none;
     color: #fff;
@@ -177,16 +161,13 @@ header {
     width: 75%;
     margin: 0 auto;
 }
-
 .menu a:last-child {
     border-bottom: none;
 }
-
 #logo {
     position: relative;
     height: 100%;
 }
-
 #name {
     font-size: 0;
     margin: 0 auto;
@@ -196,7 +177,6 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .hexTop {
     width: 300px;
     border-bottom: 100px solid #fff;
@@ -204,13 +184,11 @@ header {
     border-right: 175px solid transparent;
     margin: 0 auto;
 }
-
 .topAni {
     animation-name: hexTop;
     animation-duration: 2s;
     animation-timing-function: linear;
 }
-
 .hexBot {
     width: 300px;
     margin: 0 auto;
@@ -219,13 +197,11 @@ header {
     border-right: 175px solid transparent;
     margin: 0 auto;
 }
-
 .botAni {
     animation-name: hexBot;
     animation-duration: 2s;
     animation-timing-function: linear;
 }
-
 .hexMid {
     width: 350px;
     height: 225px;
@@ -233,14 +209,14 @@ header {
     border: 0 transparent;
     background-color: #fff;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-
 .midAni {
     animation-name: hexMid;
     animation-duration: 2s;
     animation-timing-function: linear;
 }
-
 #rcLogoDiv {
     width: 100%;
     height: 100%;
@@ -249,7 +225,6 @@ header {
     animation-duration: 2s;
     animation-timing-function: linear;
 }
-
 #rcLogoText {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 125px;
@@ -261,15 +236,12 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 #rcLogoText span {
     font-size: 150px;
 }
-
 #nameSwitch {
     padding-top: 60px;
 }
-
 h1 {
     font-size: 50px;
     font-family: 'Lato', sans-serif;
@@ -277,24 +249,20 @@ h1 {
     margin-bottom: 10px;
     color: #000;
 }
-
 #title {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
     color: #000;
 }
-
 #code {
     font-size: 15px;
     font-family: 'Lato', sans-serif;
     color: #000;
 }
-
 #nameSwitch {
     display: none;
 }
-
 
 /* Media Queries for Responsiveness */
 
@@ -384,7 +352,6 @@ h1 {
     }
 }
 
-
 /************************************************************/
 
 
@@ -399,7 +366,6 @@ h1 {
     height: 100vh;
     min-height: 675px;
 }
-
 #bioContainer {
     background: url("../images/rc1.png") no-repeat center top;
     -webkit-background-size: cover;
@@ -411,7 +377,6 @@ h1 {
     min-height: 675px;
     z-index: 8;
 }
-
 #bioTxtContainer {
     margin: 0 auto;
     width: 85%;
@@ -419,7 +384,6 @@ h1 {
     padding: 5% 0;
     position: relative;
 }
-
 #bioTxt {
     width: 325px;
     border: 2px solid rgba(0, 0, 0, 0.5);
@@ -427,7 +391,6 @@ h1 {
     background: rgba(0, 0, 0, 0.75);
     border-radius: 50px;
 }
-
 h2#bioHeader {
     margin: 30px 30px;
     color: #fff;
@@ -438,7 +401,6 @@ h2#bioHeader {
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
 }
-
 .bioContent {
     color: #fff;
     font-size: 15px;
@@ -447,18 +409,15 @@ h2#bioHeader {
     padding: 0 25px 25px 30px;
     line-height: 20px;
 }
-
 #bioLogos {
     text-align: center;
     padding-bottom: 20px;
 }
-
 .socialBioImg {
     width: 50px;
     display: inline-block;
     margin-right: 10px;
 }
-
 
 /* Media query for Header and Bio container at 575px */
 
@@ -485,13 +444,11 @@ h2#bioHeader {
         padding: 0px;
     }
 }
-
 @media screen and (min-width: 575px) {
     #bioTxtContainer {
         margin-left: 75px;
     }
 }
-
 
 /************************************************************/
 
@@ -506,13 +463,11 @@ h2#bioHeader {
     z-index: 0;
     background: #000;
 }
-
 #workContainer {
     position: relative;
     min-height: 100vh;
     width: 100%
 }
-
 #workContainer h2 {
     width: 85%;
     margin: 0 auto;
@@ -525,13 +480,11 @@ h2#bioHeader {
     padding-bottom: 5px;
     border-bottom: 2px solid #fff;
 }
-
 .workRow {
     width: 85%;
     margin: 0 auto;
     max-width: 900px;
 }
-
 .workDiv {
     margin: 50px auto;
     width: 200px;
@@ -540,11 +493,9 @@ h2#bioHeader {
     border: 5px solid #fff;
     border-radius: 50%;
 }
-
 .workDiv:hover {
     transform: scale(1.1);
 }
-
 @media screen and (min-width: 768px) {
     #workContainer h2 {
         margin-left: 75px;
@@ -558,7 +509,6 @@ h2#bioHeader {
     }
 }
 
-
 /************************************************************/
 
 
@@ -566,13 +516,13 @@ h2#bioHeader {
 
 
 /************************************************************/
+
 #cContainer {
     min-height: 100vh;
     width: 100%;
     z-index: 0;
     background: #fff;
 }
-
 #contactContainer {
     width: 85%;
     margin: 0 auto;
