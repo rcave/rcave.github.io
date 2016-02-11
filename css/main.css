@@ -203,8 +203,12 @@ header {
     animation-timing-function: linear;
 }
 .hexMid {
+    /*
     width: 350px;
     height: 225px;
+*/
+    width: 350px;
+    height: 350px;
     margin: 0 auto;
     border: 0 transparent;
     background-color: #fff;
