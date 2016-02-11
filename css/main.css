@@ -519,9 +519,94 @@ h2#bioHeader {
     min-height: 100vh;
     width: 100%;
     z-index: 0;
-    background: #fff;
+    background: rgba(0, 0, 0, .8);
+    ;
 }
 #contactContainer {
     width: 85%;
     margin: 0 auto;
+}
+#contactContainer h2 {
+    width: 100%;
+    margin: 10px auto;
+    padding-top: 40px;
+    color: #fff;
+    z-index: 20;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover {
+    outline: 0px !important;
+    -webkit-appearance: none;
+}
+.rcContactList {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.ss-q-title {
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.ss-q-short {
+    background: #333333;
+    border: 2px solid black;
+    color: #fff;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 345px;
+    padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.ss-q-long {
+    background: #333333;
+    color: #fff;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 345px;
+    height: 150px;
+    padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border: 2px solid black;
+}
+.styled-button {
+    background: #5CCD00;
+    background: -moz-linear-gradient(top, #5CCD00 0%, #4AA400 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5CCD00), color-stop(100%, #4AA400));
+    background: -webkit-linear-gradient(top, #5CCD00 0%, #4AA400 100%);
+    background: -o-linear-gradient(top, #5CCD00 0%, #4AA400 100%);
+    background: -ms-linear-gradient(top, #5CCD00 0%, #4AA400 100%);
+    background: linear-gradient(top, #5CCD00 0%, #4AA400 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#5CCD00', endColorstr='#4AA400', GradientType=0);
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #459A00;
+    width: 345px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+input:focus,
+textarea:focus {
+    background: #000;
 }
