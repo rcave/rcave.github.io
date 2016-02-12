@@ -569,8 +569,8 @@ button:hover {
     font-size: 15px;
     border-radius: 5px;
     width: 100%;
-    max-width: 325px;
-    padding-left: 10px;
+/*    max-width: 325px;
+    */    padding-left: 10px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
@@ -581,7 +581,7 @@ button:hover {
     font-size: 15px;
     border-radius: 5px;
     width: 100%;
-    max-width: 325px;
+/*    max-width: 325px;*/
     height: 150px;
     padding-left: 10px;
     font-family: 'Lato', sans-serif;
@@ -605,7 +605,7 @@ button:hover {
     -webkit-border-radius: 5px;
     border: 1px solid #459A00;
     width: 100%;
-    max-width: 325px;
+/*    max-width: 325px;*/
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
