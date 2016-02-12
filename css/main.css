@@ -537,6 +537,7 @@ h2#bioHeader {
     font-weight: 700;
     padding-bottom: 5px;
     border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
 }
 textarea:hover,
 input:hover,
