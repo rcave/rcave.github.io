@@ -365,7 +365,7 @@ h1 {
     min-height: 675px;
 }
 #bioContainer {
-    background: url("../images/rc1.png") no-repeat center top;
+    background: url("../images/rc1.jpg") no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -614,7 +614,60 @@ button:hover {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
-input:focus,
+.ss-q-short:focus,
 textarea:focus {
     background: #000;
+}
+.ss-q-short:hover,
+textarea:hover {
+    background: #000;
+}
+.styled-button:hover {
+    background: #000;
+    border-color: #000;
+}
+.styled-button:active {
+    background: #5CCD00;
+    border-color: #5CCD00;
+}
+.contactSocial {
+    width: 325px;
+    margin: 0 auto;
+    height: 325px;
+    margin-top: 60px;
+    border: 2px solid red;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 60px;
+}
+.contactSocial img {
+    width: 50px;
+}
+#contactFacebook {
+    position: absolute;
+    top: -25px;
+    left: 137.5px;
+}
+#contactInstagram {
+    position: absolute;
+    top: 50px;
+    left: 270px;
+}
+#contactLinkedIn {
+    position: absolute;
+    top: 210px;
+    left: 270px;
+}
+#contactGithub {
+    position: absolute;
+    top: 295px;
+    left: 137.5px;
+}
+#contactCodePen {
+    position: absolute;
+    top: 50px;
+}
+#contactSpotify {
+    position: absolute;
+    top: 210px;
 }
