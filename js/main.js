@@ -69,7 +69,7 @@ $('document').ready(function () {
             //go to destination
             $('html,body').animate({
                 scrollTop: dest
-            }, 1000, 'ease');
+            }, 1000, 'swing');
             hashTagActive = this.hash;
         }
     });
