@@ -15,7 +15,9 @@ html {
     width: 100%;
 }
 
-
+.clear {
+    clear: both;
+}
 /************************************************************/
 
 
@@ -420,7 +422,7 @@ h1 {
 }
 
 #bioContainer {
-    background: url("../images/rc1.jpg") no-repeat center top;
+    background: url("../images/cycling.jpg") no-repeat left top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -441,6 +443,7 @@ h1 {
 
 #bioTxt {
     width: 325px;
+    float: right;
     border: 2px solid rgba(0, 0, 0, 0.5);
     background: #000;
     background: rgba(0, 0, 0, 0.75);
