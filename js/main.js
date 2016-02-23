@@ -1,5 +1,4 @@
 $('document').ready(function () {
-
     setTimeout(function () {
 
         $('#rcLogoDiv').hide(800);
@@ -12,6 +11,55 @@ $('document').ready(function () {
         $('.hexTop').addClass('topAni');
         $('.hexMid').addClass('midAni');
         $('.hexBot').addClass('botAni');
+
+        //FACEBOOK HOVER
+        $('#contactFacebook').mouseenter(function () {
+            $('.facebookLogo').removeClass('socialInactive');
+        });
+        $('#contactFacebook').mouseleave(function () {
+            $('.facebookLogo').addClass('socialInactive');
+        });
+
+        //INSTAGRAM HOVER 
+        $('#contactInstagram').mouseenter(function () {
+            $('.InstagramLogo').removeClass('socialInactive');
+        });
+        $('#contactInstagram').mouseleave(function () {
+            $('.InstagramLogo').addClass('socialInactive');
+        });
+
+        //LINKEDIN HOVER
+        $('#contactLinkedIn').mouseenter(function () {
+            $('.LinkedInLogo').removeClass('socialInactive');
+        });
+        $('#contactLinkedIn').mouseleave(function () {
+            $('.LinkedInLogo').addClass('socialInactive');
+        });
+
+        //GITHUBHOVER
+        $('#contactGithub').mouseenter(function () {
+            $('.GitHubLogo').removeClass('socialInactive');
+        });
+        $('#contactGithub').mouseleave(function () {
+            $('.GitHubLogo').addClass('socialInactive');
+        });
+
+        //CODEPEN HOVER
+        $('#contactCodePen').mouseenter(function () {
+            $('.CodePenLogo').removeClass('socialInactive');
+        });
+        $('#contactCodePen').mouseleave(function () {
+            $('.CodePenLogo').addClass('socialInactive');
+        });
+
+        //SPOTIFY HOVER
+        $('#contactSpotify').mouseenter(function () {
+            $('.SpotifyLogo').removeClass('socialInactive');
+        });
+        $('#contactSpotify').mouseleave(function () {
+            $('.SpotifyLogo').addClass('socialInactive');
+        });
+
     }
 
     if ($(window).width() < 575) {
@@ -55,6 +103,7 @@ $('document').ready(function () {
 
         }
     });
+
     var hashTagActive = "";
     $(".scroll").click(function (event) {
         if (hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
@@ -91,52 +140,5 @@ $('document').ready(function () {
         }
     });
 
-    //FACEBOOK HOVER
-    $('#contactFacebook').mouseenter(function () {
-        $('.facebookLogo').removeClass('socialInactive');
-    });
-    $('#contactFacebook').mouseleave(function () {
-        $('.facebookLogo').addClass('socialInactive');
-    });
-
-    //INSTAGRAM HOVER 
-    $('#contactInstagram').mouseenter(function () {
-        $('.InstagramLogo').removeClass('socialInactive');
-    });
-    $('#contactInstagram').mouseleave(function () {
-        $('.InstagramLogo').addClass('socialInactive');
-    });
-
-    //LINKEDIN HOVER
-    $('#contactLinkedIn').mouseenter(function () {
-        $('.LinkedInLogo').removeClass('socialInactive');
-    });
-    $('#contactLinkedIn').mouseleave(function () {
-        $('.LinkedInLogo').addClass('socialInactive');
-    });
-
-    //GITHUBHOVER
-    $('#contactGithub').mouseenter(function () {
-        $('.GitHubLogo').removeClass('socialInactive');
-    });
-    $('#contactGithub').mouseleave(function () {
-        $('.GitHubLogo').addClass('socialInactive');
-    });
-
-    //CODEPEN HOVER
-    $('#contactCodePen').mouseenter(function () {
-        $('.CodePenLogo').removeClass('socialInactive');
-    });
-    $('#contactCodePen').mouseleave(function () {
-        $('.CodePenLogo').addClass('socialInactive');
-    });
-
-    //SPOTIFY HOVER
-    $('#contactSpotify').mouseenter(function () {
-        $('.SpotifyLogo').removeClass('socialInactive');
-    });
-    $('#contactSpotify').mouseleave(function () {
-        $('.SpotifyLogo').addClass('socialInactive');
-    });
 
 });
