@@ -57,7 +57,7 @@ $('document').ready(function () {
     });
     var hashTagActive = "";
     $(".scroll").click(function (event) {
-        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+        if (hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
             event.preventDefault();
             //calculate destination place
             var dest = 0;
@@ -73,7 +73,7 @@ $('document').ready(function () {
             hashTagActive = this.hash;
         }
     });
-    
+
 
     //Clicking Menu items
     $('.hexLinks li a').click(function () {
