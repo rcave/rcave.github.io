@@ -503,6 +503,7 @@ h2#bioHeader {
 }
 .workRow .ngttLink img {
     width:200px;
+    margin-left: -5px;
 }
 .workDiv {
     margin: 50px auto;
