@@ -103,6 +103,7 @@ header {
     z-index: 15;
 }
 #hamMen {
+    cursor: pointer;
     width: 50px;
     height: 50px;
     z-index: 10;
@@ -114,6 +115,9 @@ header {
     height: 5px;
     background: #fff;
     margin: 8px;
+}
+#hamMen div .active div:first-child {
+    background: red;
 }
 #hamMenuLinks {
     display: none;
@@ -502,7 +506,7 @@ h2#bioHeader {
     max-width: 900px;
 }
 .workRow .ngttLink img {
-    width:200px;
+    width: 200px;
     margin-left: -5px;
 }
 .workDiv {
