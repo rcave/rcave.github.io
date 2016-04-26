@@ -117,8 +117,8 @@ header {
     margin: 8px;
 }
 #hamMen.active div:first-child {
-    -webkit-transform: translate(3px, -2px) rotate(45deg);
-    transform: translate(3px, -2px) rotate(45deg);
+    -webkit-transform: translate(2px, 1px) rotate(45deg);
+    transform: translate(2px, 1px) rotate(45deg);
     -webkit-transform-origin: 0% 0%;
     transform-origin: 0% 0%;
 }
@@ -126,8 +126,8 @@ header {
     opacity: 0;
 }
 #hamMen.active div:last-child {
-    -webkit-transform: translate(3px, 2px) rotate(-45deg);
-    transform: translate(3px, 2px) rotate(-45deg);
+    -webkit-transform: translate(-2px, -2px) rotate(-45deg);
+    transform: translate(-2px, -2px) rotate(-45deg);
     -webkit-transform-origin: 0% 0%;
     transform-origin: 0% 0%;
 }
