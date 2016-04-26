@@ -71,6 +71,7 @@ $('document').ready(function () {
     $('#hamMen').click(function () {
 
         if ($('#hamMen').hasClass('takeOver')) {
+            $('#hamMen').removeClass('active');
             $('#navTakeOver').slideUp(1000);
             setTimeout(function () {
                 $('#hamMenuLinks').hide();
@@ -87,6 +88,7 @@ $('document').ready(function () {
             $('#hamMenuLinks').show();
             $('#navTakeOver').slideDown(1000);
             $('#hamMen').addClass('takeOver');
+            $('#hamMen').addClass('active');
             $('#hamMen div').css('background', '#000');
             $('.menCon').css('background', 'none');
         }

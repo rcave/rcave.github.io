@@ -116,8 +116,20 @@ header {
     background: #fff;
     margin: 8px;
 }
-#hamMen div .active div:first-child {
-    background: red;
+#hamMen.active div:first-child {
+    -webkit-transform: translate(3px, -2px) rotate(45deg);
+    transform: translate(3px, -2px) rotate(45deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+#hamMen.active div:nth-child(2) {
+    opacity: 0;
+}
+#hamMen.active div:last-child {
+    -webkit-transform: translate(3px, 2px) rotate(-45deg);
+    transform: translate(3px, 2px) rotate(-45deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
 }
 #hamMenuLinks {
     display: none;
