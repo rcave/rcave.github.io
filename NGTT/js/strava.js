@@ -10,6 +10,7 @@ console.log("Strava Script Loaded");
 
 //var xhr = new XMLHttpRequest();
 
+$(document).ready(function() {
 $.ajax({
     url: "https://www.strava.com/api/v3/athletes/786332",
     jsonp: "callback",
@@ -20,9 +21,9 @@ $.ajax({
     success: function (response) {
         console.log(response); //server response
     },
-
+    beforeSend: setHeader 
 });
-
+});
 function setHeader(xhr) {
     xhr.setRequestHeader('Authorization', 'Bearer c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3');
 }
