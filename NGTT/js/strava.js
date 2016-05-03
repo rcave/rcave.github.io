@@ -11,7 +11,7 @@ console.log("Strava Script Loaded");
 $.ajax({
     url: "https://www.strava.com/api/v3/athletes/7863323",
     headers: {
-        Autorization: "Bearer c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3"
+        'Autorization' : 'Bearer c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3'
     },
     jsonp: "callback",
     dataType: "jsonp", 
