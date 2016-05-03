@@ -8,7 +8,7 @@
 // accessToken: "c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3"
 console.log("Strava Script Loaded");
 
-//var xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest();
 
 $(document).ready(function() {
 $.ajax({
