@@ -10,17 +10,23 @@ console.log("Strava Script Loaded");
 
 $(document).ready(function () {
 
-var jsonData;
-    
+    var jsonData;
+
     $.ajax({
         url: "https://www.strava.com/api/v3/athletes/786332?access_token=c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3",
         type: "get",
         crossDomain: true,
         dataType: "jsonp",
-        jsonpCallback: "callback",
-        success: function (response) {
-            console.log(response); // server response
-            jsonData = response; // you can use jsonData variable in outside of the function
-        }
+        jsonp: "jsonp",
+        //        success: function (response) {
+        //            console.log(response); // server response
+        //            jsonData = response; // you can use jsonData variable in outside of the function
+        //        }
+        success: function () {
+            console.log('Success!');
+        },
+        error: function () {
+            console.log('Uh Oh!');
+        },
     });
 });
