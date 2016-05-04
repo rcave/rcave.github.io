@@ -32,7 +32,7 @@ console.log("Strava Script Loaded");
 var accessToken = "c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3";
 
 $.ajax({
-  url: "https://www.strava.com/api/v3/athletes/786332",
+  url: "https://www.strava.com/api/v3/athlete",
   dataType: 'jsonp',
   data: {
     alt: 'json-in-script'
@@ -40,5 +40,5 @@ $.ajax({
   success: function(data, status) {
     return console.log("The returned data", data);
   },
-  beforeSend: function(xhr, settings) { xhr.setRequestHeader('Authorization','Bearer ' + accessToken); } 
+  beforeSend: function(xhr) { xhr.setRequestHeader('Authorization','Bearer c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3'); } 
 });
