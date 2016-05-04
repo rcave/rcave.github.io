@@ -17,7 +17,7 @@ $(document).ready(function () {
         type: "get",
         crossDomain: true,
         dataType: "jsonp",
-        jsonp: "json_callback",
+        jsonp: false,
         success: function () {
             console.log('Success!');
         },
