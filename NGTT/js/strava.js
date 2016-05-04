@@ -17,9 +17,9 @@ $(document).ready(function () {
         success: function () {
             console.log('FINALLY FUCKING DID IT!');
         },
-        error: function (data) {
+        error: function (response) {
             console.log('Uh Oh!');
-            console.log(data);
+            console.log(response);
         },
     });
     
