@@ -9,7 +9,7 @@
 console.log("Strava Script Loaded");
 
 var settings = {
-  "async": true,
+  "async": false,
   "crossDomain": true,
   "url": "https://www.strava.com/api/v3/athletes/786332",
   "method": "GET",
