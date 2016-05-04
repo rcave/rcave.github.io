@@ -19,7 +19,7 @@ $.ajaxSetup({
 
 $.ajax({
     url: "https://www.strava.com/api/v3/athletes/786332",
-    jsonp: "callback",
+    //jsonp: "callback",
     dataType: "jsonp",
     data: {
         format: "json"
