@@ -14,12 +14,12 @@ $(document).ready(function () {
         type: "get",
         dataType: "jsonp",
         url: "https://www.strava.com/api/v3/athletes/786332?access_token=c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3",
-        //crossDomain: true,
         success: function () {
-            console.log('Success!');
+            console.log('FINALLY FUCKING DID IT!');
         },
-        error: function () {
+        error: function (data) {
             console.log('Uh Oh!');
+            console.log(data);
         },
     });
     
