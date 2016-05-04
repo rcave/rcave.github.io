@@ -18,6 +18,6 @@ $(document).ready(function () {
         jsonp: "$jsonp",
         dataType: "jsonp"
     }).success(function (data) {
-        console.log(data.found);
+       $('html').append(data);
     });
 });
