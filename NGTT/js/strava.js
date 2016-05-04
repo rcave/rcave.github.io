@@ -20,7 +20,7 @@ $(document).ready(function () {
 
             var athleteData = data;
             
-            $('.stravaData').append(athleteData);
+            $('.stravaData').append("<p>" + athleteData + "</p>");
         },
         error: function () {
             console.log('Uh Oh!');
