@@ -16,8 +16,9 @@ $(document).ready(function () {
         url: "https://www.strava.com/api/v3/athletes/786332?access_token=c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3",
         type: "get",
         crossDomain: true,
-        dataType: "json",
+        dataType: "jsonp",
         jsonp: "jsonp",
+        callback= "JSON_CALLBACK",
         //        success: function (response) {
         //            console.log(response); // server response
         //            jsonData = response; // you can use jsonData variable in outside of the function
