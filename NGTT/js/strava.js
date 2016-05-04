@@ -10,14 +10,11 @@ console.log("Strava Script Loaded");
 
 $(document).ready(function () {
 
-    var jsonData;
-
     $.ajax({
-        url: "https://www.strava.com/api/v3/athletes/786332?access_token=c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3&format=jsonp",
         type: "get",
-        crossDomain: true,
         dataType: "jsonp",
-        jsonp: false,
+        url: "https://www.strava.com/api/v3/athletes/786332?access_token=c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3",
+        //crossDomain: true,
         success: function () {
             console.log('Success!');
         },
@@ -25,4 +22,5 @@ $(document).ready(function () {
             console.log('Uh Oh!');
         },
     });
+    
 });
