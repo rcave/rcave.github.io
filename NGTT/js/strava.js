@@ -12,12 +12,9 @@ $(document).ready(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://www.strava.com/api/v3/athletes/786332",
+        "url": "https://www.strava.com/api/v3/athletes/786332?access_token=c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3",
         "method": "GET",
         "dateType": "jsonp",
-        "headers": {
-            "authorization": "Bearer c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3"
-        }
     }
 
     $.ajax(settings).done(function (response) {
