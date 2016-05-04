@@ -19,7 +19,7 @@ var jsonData;
         jsonp: "$jsonp",
         dataType: "jsonp",
         success: function (response) {
-            console.log(response); // server response
+            console.log("Done"); // server response
             jsonData = response; // you can use jsonData variable in outside of the function
         }
     });
