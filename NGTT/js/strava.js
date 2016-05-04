@@ -23,5 +23,5 @@ $.ajax({
     },
     beforeSend: function (xhr) {
         xhr.setRequestHeader('Authorization', 'Bearer c0ed3db9c2a6ae04e3d23097d62735dba7bba1c3');
-    },
+    }
 });
