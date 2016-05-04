@@ -18,11 +18,7 @@ $(document).ready(function () {
         crossDomain: true,
         dataType: "jsonp",
         jsonp: "jsonp",
-        callback= "JSON_CALLBACK",
-        //        success: function (response) {
-        //            console.log(response); // server response
-        //            jsonData = response; // you can use jsonData variable in outside of the function
-        //        }
+        callback: "JSON_CALLBACK",
         success: function () {
             console.log('Success!');
         },
