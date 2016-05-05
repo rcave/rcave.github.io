@@ -244,6 +244,26 @@ footer {
     max-width: 300px;
     margin-bottom: 50px;
 }
+
+.riderProfile img {
+  width: 75px;
+  border-radius: 50%;
+}
+.riderInfo {
+  display: inline-block;
+  padding: 15px;
+  vertical-align: top;
+}
+.riderName {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.ytdCount, 
+.ytdDistance {
+  font-size: 12px;
+}
+
+
 .container p {
     max-width: 400px;
 }
