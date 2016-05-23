@@ -21,5 +21,6 @@ $(document).ready(function () {
     var xhr = new XMLHttpRequest();
 
     xhr.open("GET", "https://rudy.caveda:Snare7192@bluesombrero.atlassian.net/rest/agile/1.0/issue/BWA-6507");
-    xhr.send(data);
+    xhr.send();
+    console.log(xhr.responseText);
 });
