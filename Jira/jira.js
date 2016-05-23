@@ -17,21 +17,9 @@ $(document).ready(function () {
     //        }
     //    });
 
-    var data = "\t{ \"username\": \"rudy.caveda\", \"password\": \"Snare7192\" }";
 
     var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
 
-    xhr.addEventListener("readystatechange", function () {
-        if (this.readyState === 4) {
-            console.log(this.responseText);
-        }
-    });
-
-    xhr.open("GET", "https://bluesombrero.atlassian.net/rest/agile/1.0/issue/BWA-6507");
-    xhr.setRequestHeader("authorization", "Basic cnVkeS5jYXZlZGE6U25hcmU3MTky");
-    xhr.setRequestHeader("cache-control", "no-cache");
-    xhr.setRequestHeader("postman-token", "7650b764-4584-292c-cc08-e6c3b1ebf476");
-
+    xhr.open("GET", "https://rudy.caveda:Snare7192@bluesombrero.atlassian.net/rest/agile/1.0/issue/BWA-6507");
     xhr.send(data);
 });
