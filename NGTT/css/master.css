@@ -252,6 +252,10 @@ footer {
 .activities:last-child {
   border-bottom: none;
 }
+.activites p {
+    margin: 0;
+    padding: 0;
+}
 .riderImage{
   width: 100px;
   height: 100px;
@@ -261,7 +265,7 @@ footer {
 .riderInfo{
   display: inline-block;
   vertical-align: top;
-  padding: 15px;
+  padding: 5px 15px;
 }
 .riderName{
   font-size: 20px;
