@@ -252,10 +252,11 @@ footer {
 .activities:last-child {
   border-bottom: none;
 }
-.activites p {
+#homeStravaAboutUS .stravaActivities .activites p {
     margin: 0;
     padding: 0;
 }
+
 .riderImage{
   width: 100px;
   height: 100px;
@@ -272,11 +273,7 @@ footer {
 }
 
 
-/*
-.container p {
-    max-width: 400px;
-}
-*/
+
 #aboutUs {
     font-size: 30px;
 }
