@@ -197,10 +197,10 @@ footer {
 
 #homeStravaAboutUS #aboutUs {
     color: #000000;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 250px;
+    height: 400px;
 }
 
 #homeStravaAboutUS h2 {
@@ -239,7 +239,7 @@ footer {
 
 .stravaActivities {
     overflow-y: auto;
-    height: 200px;
+    height: 400px;
     width: 100%;
     margin-left: 10px;
     max-width: 300px;
@@ -257,6 +257,9 @@ footer {
 
 .stravaActivities p {
     margin: 0;
+}
+.activities p:first-child {
+    font-weight: 800;
 }
 
 .riderImage {
@@ -279,6 +282,33 @@ footer {
 
 #aboutUs {
     font-size: 30px;
+}
+
+@media screen and (max-width: 767px){
+    
+    #homeStravaAboutUS #aboutUs {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    
+    #homeStravaAboutUS #aboutUs {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    
+    #homeStravaAboutUS #aboutUs {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 430px){
+    
+    #homeStravaAboutUS #aboutUs {
+        height: 400px;
+    }
 }
 
 
@@ -371,6 +401,7 @@ footer {
     font-size: 25px;
     padding-right: 1px;
     display: none;
+    z-index: 1000;
 }
 
 #closeButton:hover {
