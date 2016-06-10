@@ -183,6 +183,7 @@ footer {
 #social a {
     padding: 0 5px;
 }
+
 #social a img {
     width: 50px;
 }
@@ -245,39 +246,42 @@ footer {
     margin-bottom: 50px;
 }
 
-.activities{
-  padding: 10px 0;
-  border-bottom: 2px solid gray;
+.activities {
+    padding: 10px 0;
+    border-bottom: 2px solid gray;
 }
+
 .activities:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
-#homeStravaAboutUS .stravaActivities .activites p {
+
+.stravaActivities p {
     margin: 0;
-    padding: 0;
-    color: red;
 }
 
-.riderImage{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.riderInfo{
-  display: inline-block;
-  vertical-align: top;
-  padding: 5px 15px;
-}
-.riderName{
-  font-size: 20px;
+.riderImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
 }
 
+.riderInfo {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 15px;
+}
 
+.riderName {
+    font-size: 20px;
+}
 
 #aboutUs {
     font-size: 30px;
 }
+
+
 /***************************** Riders Page ***************************/
 
 #ridersContent {
@@ -303,6 +307,7 @@ footer {
     max-width: 400px;
     margin-bottom: 50px;
 }
+
 
 /*************************** Sponsors Page *************************/
 
