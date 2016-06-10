@@ -30,7 +30,7 @@ $(document).ready(function () {
       var fixedSpd = convSpd.toFixed(1);
       var initDate = new Date(data[i].start_date);
       var day = initDate.getDate();
-      var month = initDate.getMonth();
+      var month = initDate.getMonth() + 1;
       var year = initDate.getFullYear();
       var stravaDate = month + "/" + day + "/" + year;
       var str = '<div class="activities"><img class="riderImage" src="'+ riderImage +  '"/><div class="riderInfo"><span class="riderName">' + firstName + ' ' + lastName + '</span><p>Activity Type: ' + actType + '</p><p>Date: ' + stravaDate + '</p><p>Distance: ' + fixedDist + ' mi</p><p>Avg Speed: ' + fixedSpd + ' mi/hr</p></div></div>';
