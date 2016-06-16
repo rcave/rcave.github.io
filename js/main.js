@@ -133,6 +133,8 @@ $('document').ready(function () {
             $('#hamMenuLinks').hide();
         }, 1000);
         $('#hamMen').removeClass('takeOver');
+        $('#hamMen').removeClass('active');
+        
         $('#hamMen div').css('background', '#fff');
 
         if ($(window).width() < 575) {
